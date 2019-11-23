@@ -1,5 +1,5 @@
-function getCurrentCityWeather() {
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&APPID=7a7a18a0877364062aba3b94fdafdc1d"
+function getCityWeather() {
+    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&APPID=4d4f75f977fc59faeb9817db4af048db"
 //    Weather data//////////////////////////////////////////////////////////////////
     $.ajax({
         url: queryURL,
@@ -9,23 +9,33 @@ function getCurrentCityWeather() {
         var temperature = [];
         var humidity = [];
         var windSpeed = [];
-        var icon = [];
-        var description = [];
-        var lat = 0;
-        var lon = 0;
+        
         for (i = 0; i < 10; i++) {
             temperature.push(((response.list[i].main.temp - 273.15) * (9 / 5) + 32).toFixed(0))
             humidity.push(response.list[i].main.humidity);
             windSpeed.push(response.list[i].wind.speed);
-            icon.push(response.list[i].weather[0].icon);
-            description.push(response.list[i].weather[0].description);
         }
-        lat = response.city.coord.lat;
-        lon = response.city.coord.lon;
+        
         console.log("wind " + windSpeed);
         console.log("humidity " + humidity);
         console.log("temperature " + temperature);
         console.log("icon " + icon);
-        console.log("description " + description);
-        console.log("lat " + lat)
-        console.log("lon " + lon)
+
+        $("#city-div").empty();
+      $("#city-div").append(temperature, humidity, windSpeed);
+    });
+}
+
+// Event handler for user clicking the select-city button
+$("#select-city").on("click", function(event) {
+    // Preventing the button from trying to submit the form
+    event.preventDefault();
+    // Storing the artist name
+    var inputCity = $("#city-input").val().trim();
+
+    // Running the searchBandsInTown function(passing in the artist as an argument)
+    getCityWeather(inputCity);
+  });
+
+
+        

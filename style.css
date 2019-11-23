@@ -7,7 +7,37 @@ h1{
 }
 .row{
     padding: 25px;
-    border: #888787 !important;
+    border: solid #888787 !important;
     color: #888787;
     background-color: #ffffff;
+    width: 25%;
+}
+aside{
+    background-color: #b6b6b6;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+}
+section{
+    background-color: #e2e2e2;
+    float: right;
+    width: 70%;
+}
+.flex-container{
+    display: flex;
+    height: 600px;
+}
+.first{
+    background-color: #b6b6b6;
+}
+.second{
+    background-color: #e2e2e2;
+}
+.container-fluid{
+    margin: 0px !important;
+}
+#city-div{
+    width: 400px;
+    height: 200px;
 }
