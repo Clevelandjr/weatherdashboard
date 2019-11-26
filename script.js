@@ -88,7 +88,7 @@ function getforecastWeather() {
         }
 
         // UV data//////////////////////////////////////////////////////////////////
-        var queryUV = "https://api.openweathermap.org/data/2.5/uvi?appid=7a7a18a0877364062aba3b94fdafdc1d&lat=" + lat + "&lon=" + lon + "&cnt=5"
+        var queryUV = "https://api.openweathermap.org/data/2.5/uvi?appid=4d4f75f977fc59faeb9817db4af048db&lat=" + lat + "&lon=" + lon + "&cnt=5"
         $.ajax({
             url: queryUV,
             method: "GET"
@@ -103,7 +103,7 @@ function getforecastWeather() {
 
 // Today's weather////////////////////////////////////////////////////////
 function getCurrentWeather() {
-    var currentURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=7a7a18a0877364062aba3b94fdafdc1d"
+    var currentURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=4d4f75f977fc59faeb9817db4af048db"
 
     $.ajax({
         url: currentURL,
@@ -136,7 +136,7 @@ function renderCityHistory() {
     }
 
 
-    
+
 }
 
         
