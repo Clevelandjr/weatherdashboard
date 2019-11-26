@@ -61,15 +61,9 @@ function getforecastWeather() {
         lat = response.city.coord.lat;
         lon = response.city.coord.lon;
 
-        // console.log("wind " + windSpeed);
-        // console.log("humidity " + humidity);
-        // console.log("temperature " + temperature);
-        // console.log("icon " + icon);
-        // console.log("description " + description);
-        // console.log("lat " + lat)
-        // console.log("lon " + lon)
+      
 
-        // Forecast//////////////////////////////////////////////////////////////
+        // Forecast//////
         forecast();
         function forecast() {
             var j = 0
@@ -81,7 +75,7 @@ function getforecastWeather() {
                 j = j + 8
             };
         }
-        // UV data//////////////////////////////////////////////////////////////////
+        // UV data///
         var queryUV = "https://api.openweathermap.org/data/2.5/uvi?appid=4d4f75f977fc59faeb9817db4af048db&lat=" + lat + "&lon=" + lon + "&cnt=5"
         $.ajax({
             url: queryUV,
@@ -92,7 +86,7 @@ function getforecastWeather() {
         });
     })
 }
-// Today's weather////////////////////////////////////////////////////////
+// Today's weather///
 function getCurrentWeather() {
     var currentURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=4d4f75f977fc59faeb9817db4af048db"
 

@@ -1,5 +1,9 @@
-html{height:100vh;}
-body{height:100vh;}
+html{
+    height:100vh;
+}
+body{
+    height:100vh;
+}
 .header{
     color: white;
     background-color:  #222222;
@@ -26,7 +30,6 @@ body{height:100vh;}
 }
 #search-input{
     border-radius: 5px;
-    /* width: 200px; */
     width: 100%;
 }
 #city-form{
