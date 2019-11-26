@@ -7,25 +7,15 @@ body{height:100vh;}
 }
 
 .searchbar{
-    /* fuck this search bar */
-    /* position:absolute;
-    left: 0px; */
-  
     background-color: lightgrey;
     min-height: 100vh;
     height: 100%;
-    /* width:300px; */
- 
 }
-/* .content{
-    margin-left: 310px;
-} */
+
 .city{
     display:flex;
     align-items: center;
-    
     margin-top:15px;
-    
     margin-left: 15px;
     border-radius: 15px 0px 0px 15px;
     height: 50vh;
@@ -34,7 +24,6 @@ body{height:100vh;}
     border-width: 2px;
     min-height: 263px;
 }
-
 #search-input{
     border-radius: 5px;
     /* width: 200px; */
@@ -52,7 +41,6 @@ body{height:100vh;}
 #displaycards{
     display:flex;
 }
-
 li{
     font-size: 20px;
     text-align: center;
