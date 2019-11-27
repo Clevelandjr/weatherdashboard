@@ -26,20 +26,31 @@
                 <h1>Weather Dashboard</h1>
             </div>
         </div>
+
+
         <div class="row main">
+
             <div class="col-sm-2 searchbar">
                 <h4>Search for a City:</h4>
-                <!-- Search -->
+                <!-- Search bar -->
                 <form id="city-form">
                     <input type="text" id="search-input">
+
                     <button class="btn btn-primary btn-sm submit" id="add-city" type="submit">
                         <div id="icon">&#9906</div>
                     </button>
                 </form>
                 <br>
-                <!-- history -->
-                <ul id="city-history"></ul>
-            <!--content display-->
+                <!-- City history -->
+                <ul id="city-history">
+                    <!-- <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li> -->
+                </ul>
+            </div>
+            <!-- main content display -->
+            
             <div class="col-md-10 content">
                 <div class="row">
                     <div class="col-sm-12 city">
@@ -55,12 +66,17 @@
                             <p id="uv">UV Index: </p>
                             <br>
                         </div>
+
                     </div>
+
                 </div>
                 <div class="container-fluid">
                     <div class="row">
+
                         <div class="col-sm-12 forecast">
+
                             <h2>5-Day Forecast:</h2>
+                           
                                 <div id="displaycards">
                                     <div class="card" style="width: 18rem;">
                                         <div class="card-body">
@@ -107,14 +123,17 @@
                                             <p class="card-text humidforecast">Humidity: </p>
                                         </div>
                                     </div>
+
                                 </div>
-                            </div>
+                            
+
+
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
