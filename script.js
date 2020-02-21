@@ -61,8 +61,6 @@ function getforecastWeather() {
         lat = response.city.coord.lat;
         lon = response.city.coord.lon;
 
-      
-
         // Forecast//////
         forecast();
         function forecast() {
